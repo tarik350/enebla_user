@@ -1,3 +1,4 @@
+import 'package:enebla_new/pages/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:enebla_new/theme/style.dart' as style;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -70,14 +71,14 @@ class _OnBordingState extends State<OnBording> {
                     child: ElevatedButton(
                       onPressed: () async {
                         await _storeOnBoardInfo();
-                        // _pageIndex != 3
-                        //     ? _pageController.nextPage(
-                        //         duration: Duration(milliseconds: 300),
-                        //         curve: Curves.ease)
-                        //     : Navigator.push(
-                        //         context,
-                        //         MaterialPageRoute(
-                        //             builder: (context) => LoginPage()));
+                        _pageIndex != 3
+                            ? _pageController.nextPage(
+                                duration: Duration(milliseconds: 300),
+                                curve: Curves.ease)
+                            : Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage()));
                       },
                       style: ElevatedButton.styleFrom(
                         shape: CircleBorder(),

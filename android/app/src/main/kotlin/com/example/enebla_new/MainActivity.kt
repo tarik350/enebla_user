@@ -1,4 +1,4 @@
-package com.example.enebla_new
+package com.example.enebla
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,34 +1,42 @@
-import 'package:flutter/foundation.dart';
-
 class User {
-  final name;
-  final age;
-  final gender;
-  final email;
-  final password;
+  String? uid;
+  String? phonenumber;
+  String? email;
+  String? address;
+  String? firstname;
+  String? lastname;
+  String photoUrl;
+
   User(
-      {required this.name,
-      this.age,
-      this.gender,
-      required this.email,
-      required this.password});
-
-  User fromJson(Map<String, dynamic> map) {
+      {this.uid,
+      this.email,
+      this.firstname,
+      this.phonenumber,
+      this.address,
+      this.lastname,
+      required this.photoUrl});
+  //receiving data from server
+  factory User.fromMap(Map) {
     return User(
-        name: map['name'],
-        age: map['age'] ?? null,
-        gender: map['gender'] ?? null,
-        email: map['email'],
-        password: map['password']);
+      photoUrl: Map['photoUrl'],
+      uid: Map['uid'],
+      email: Map['email'],
+      firstname: Map['firstname'],
+      lastname: Map['firstname'],
+      phonenumber: Map['phonenumber'],
+      address: Map['address'],
+    );
   }
-
-  Map<String, dynamic> toMap() {
+  //sending data to our server
+  Map<String, dynamic> toJson() {
     return {
-      'name': name,
+      'uid': uid,
       'email': email,
-      'gender': gender,
-      'age': age,
-      'password': password
+      'firstname': firstname,
+      'lastname': lastname,
+      'phonenumber': phonenumber,
+      'address': address,
+      'photoUrl': photoUrl
     };
   }
 }

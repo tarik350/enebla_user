@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "984546662324",
+    "project_id": "enebla-be035",
+    "storage_bucket": "enebla-be035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984546662324:android:c0dbcd97cf62fa177f84e1",
+        "android_client_info": {
+          "package_name": "com.example.enebla"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlkCUuVN4RdM0dEbFqp-AP65fIre9dxMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984546662324:android:0eb83777f95407db7f84e1",
+        "android_client_info": {
+          "package_name": "com.example.enebla_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlkCUuVN4RdM0dEbFqp-AP65fIre9dxMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
